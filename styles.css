@@ -1,0 +1,76 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Heavy.ttf");
+}
+
+body {
+    font-family: "SF Pro Display";
+}
+
+.my-custom-bg {
+    background: rgba(234, 232, 228, 0.5);
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar-brand,
+.nav-link {
+    font-family: "SF Pro Text";
+    color: #323232;
+	position: relative;
+	outline: none !important;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link::after {
+	content: "";
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0;
+	transition: 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.navbar-brand:hover,
+.navbar-brand:focus {
+	color: #885405;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+	background-color: #885405;
+	width: 100%;
+}
+

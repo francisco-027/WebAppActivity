@@ -1327,7 +1327,7 @@ body {
 }
 .my-custom-bg {
     background: rgba(234, 232, 228, 0.5);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
     position: sticky;
     top: 0;
     overflow: hidden;

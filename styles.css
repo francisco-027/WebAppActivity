@@ -18,6 +18,10 @@ body {
     font-family: "SF Pro Display";
 }
 
+nav {
+    z-index: 1000;
+}
+
 .my-custom-bg {
     background: rgba(234, 232, 228, 0.5);
     backdrop-filter: blur(25px);
@@ -31,10 +35,10 @@ body {
 .nav-link {
     font-family: "SF Pro Text";
     color: #323232;
-	position: relative;
-	outline: none !important;
-	text-transform: uppercase;
-	transition: 0.2s;
+    position: relative;
+    outline: none !important;
+    text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .nav-link:after {
@@ -73,4 +77,81 @@ body {
 	background-color: #885405;
 	width: 100%;
 }
+
+.card-header {
+  text-align: right;
+  height: 40px;
+}
+
+.store-name {
+  text-align: left;
+  position: absolute;
+  display: block;
+  
+}
+
+.delete {
+  border: none;
+  background: none;
+  color: #885405;
+}
+
+.delete:hover {
+  color: #d04132;
+}
+
+.card-body h2 {
+  text-decoration: #885405 underline;
+  font-size: x-large;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.card-body h4 {
+  font-size: medium;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-family: "SF Pro Text";
+}
+
+.drop-down {
+  padding-left: 25px;
+}
+
+#myDropdown {
+  font-size: medium;
+  width: 23%;
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+}
+
+.card-footer {
+  height: 40px;
+}
+
+.form-check {
+  display: inline-flex;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+
+.form-check-input {
+  background-color: rgba(234, 232, 228, 0.9);
+  backdrop-filter: blur(25px);
+  border-color: #885405;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+
+.form-check-input:checked {
+  background-color: rgba(136, 84, 5, 0.9);
+  border-color: #885405;
+  backdrop-filter: blur(25px);
+}
+
+
 

@@ -1521,8 +1521,20 @@ nav {
   padding-top: 5px;
   color: #af5e00;
 }
-
-
-
-
+/**starts leovs**/
+.card-text {
+    font-family: "SF Pro Text";
+    color: #573100;
+    text-align: center;
+    font-size: large;
+}
+.founder-one {
+    text-align: center;   
+}
+.founder-one h3 {
+    font-family: "SF Pro Text";
+    color: #885405;
+    font-size: 20px;  
+    margin-top: -20px;
+}
 /*# sourceMappingURL=styles.css.map */

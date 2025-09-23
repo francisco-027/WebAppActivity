@@ -39,11 +39,17 @@
   </header> -->
 
   <!-- PRODUCTS -->
-  <section class="py-5">
+  <section class="py-4">
     <div class="container">
-      <h2 class="text-left mb-4">Your Cart</h2>
-
-      <div class="card mb-3" style="max-width: 1300px; background-color: rgb(255, 243, 225); border-color: rgba(136, 84, 5, 1);">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-left"><i class="fa-solid fa-cart-shopping"></i> Your Cart</h2>
+        <div class="select-all d-flex">
+          <label class="select-label" for="selectAllCart">Select All</label>
+          <input class="select-check" type="checkbox" id="selectAllCart">
+        </div>
+      </div>
+      
+       <div class="card mb-4" style="max-width: 1300px; background-color: rgb(255, 237, 205); border-color: rgba(136, 84, 5, 1);">
         <div class="row g-0">
           <div class="col-md-3">
             <div class="form-check">
@@ -54,7 +60,7 @@
           <div class="col-md-9">
             <div class="card-header">
               <div class="store-name">
-              <small class="text-body-secondary">TAYLOR SWIFT STORE</small>
+              <a href="#" class="store"><i class="fa-solid fa-shop"></i> TAYLOR SWIFT STORE <i class="fa-solid fa-chevron-right"></i></a>
               </div>
               <button class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
             </div>
@@ -74,12 +80,13 @@
             </div>
           </div>
           <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+              <small class="shipping"><i class="fa-solid fa-truck"></i> Free Shipping</small>
+              <p class="coupon"><i class="fa-solid fa-ticket"></i> Save up to ₱500 with coupons <i class="fa-solid fa-chevron-right"></i></p>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3" style="max-width: 1300px; background-color: rgb(255, 243, 225); border-color: rgba(136, 84, 5, 1);">
+      <div class="card mb-4" style="max-width: 1300px; background-color: rgb(255, 237, 205); border-color: rgba(136, 84, 5, 1);">
         <div class="row g-0">
           <div class="col-md-3">
             <div class="form-check">
@@ -90,13 +97,14 @@
           <div class="col-md-9">
             <div class="card-header">
               <div class="store-name">
-              <small class="text-body-secondary">TAYLOR SWIFT STORE</small>
+              <a href="#" class="store"><i class="fa-solid fa-shop"></i> TAYLOR SWIFT STORE <i class="fa-solid fa-chevron-right"></i></a>
               </div>
               <button class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
             </div>
             <div class="card-body">
               <h2 class="card-title">Taylor Swift's - Folklore Cardigan</h2>
-              <h4><i class="fa-solid fa-list"></i> Variation</h4>
+              
+              <h4>Variation:</h4>
               <div class="drop-down">
                 <select id="myDropdown" name="dropdownOption">
                   <option value="option1">(XS) Extra Small</option>
@@ -108,16 +116,32 @@
               </div>
             </div>
           </div>
+          <div class="card-footer">
+              <small class="shipping"><i class="fa-solid fa-truck"></i> Free Shipping</small>
+              <p class="coupon"><i class="fa-solid fa-ticket"></i> Save up to ₱500 with coupons <i class="fa-solid fa-chevron-right"></i></p>
+          </div>
         </div>
       </div>
+
       
 
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 E-Shop | Designed for demo purposes</p>
+  <footer class="my-custom-footer-bg">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="price">
+        <p>Total:</p>
+        <h2>₱0</h2>
+        </div>
+        <div class="finish">
+        <p><i class="fa-solid fa-ticket"></i> Apply Voucher</p>
+        <button type="button" class="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>

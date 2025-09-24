@@ -1538,6 +1538,10 @@ nav {
     margin-top: -20px;
 }
 /**CON CONTACTS DESIGN**/
+.contact-background {
+  background-color: #f3d389;
+  height: 100%;
+}
 .contact-text h1 {
   font-family: "SF Pro Text";
   color: #573100;
@@ -1547,7 +1551,62 @@ nav {
   gap: 10px;
   width: 100%;
 }
-.contact-message input {
-  height: 200px;
+.contact-name input,
+ .contact-email input, 
+ .contact-subject input {
+  border-radius:8px;
+  height: 60px;
+  border-color:#573100;
+  border-width:2px;
+  background-color: rgba(250, 233, 209, 0.5);
+}
+.contact-name input::-moz-placeholder, .contact-email input::-moz-placeholder, .contact-subject input::-moz-placeholder {
+  color: #573100; 
+  font-size: large;
+ }
+.contact-name input::placeholder,
+ .contact-email input::placeholder, 
+ .contact-subject input::placeholder {
+  color: #573100; 
+  font-size: large;
+ }
+.contact-message textarea {
+  border-radius:8px;
+  border-color:#573100;
+  border-width:2px;
+  background-color: rgba(250, 233, 209, 0.5);
+}
+.contact-message textarea::-moz-placeholder {
+ color: #573100;
+ font-size: large;
+}
+.contact-message textarea::placeholder {
+ color: #573100;
+ font-size: large;
+}
+.contact-submit {
+  border: none;
+  color: #ffffff;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #885405;
+  width: 100%;
+}
+.contact-desc p {
+  font-family: "SF Pro Display";
+  color: #573100;
+  font-size: x-large;
+  margin-bottom: -10px;
+}
+.contact-desc {
+  margin-top: 20px;
+}
+.contact-icons {
+  display:inline-flex;
+  gap:50px;
+}
+.contact-icons h1 {
+  font-size: 50px;
+  color: #573100;
 }
 /*# sourceMappingURL=styles.css.map */

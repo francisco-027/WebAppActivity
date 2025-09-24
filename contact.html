@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Shop - Contact</title>
+  <title>E-Shop - Home</title>
 
   <!-- Bootstrap CSS (comment out to see plain HTML) -->
   <link href="./dist/styles.css" rel="stylesheet">
@@ -21,30 +21,48 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
         </ul>
       </div>
     </div>
   </nav>
-<div class="container py-5">
 
+  <!-- PRODUCTS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="contact-text">
+          <h1>HAVE ANY QUESTION?</h1>
+          <h1>LET US KNOW</h1>
+          <h1>WE ARE READY TO HELP</H1>
+        </div>
+        <div class="contact-form">
+          <div class="contact-name mb-4">
+            <input type="text" class="form-control" id="f-name" placeholder="First Name">
+            <input type="text" class="form-control" id="l-name" placeholder="Last Name">
+          </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="img/bosscon.jpeg" class="card-img-top" alt="...">
-  <div class="founder-one">
-    <p class="card-text">FOUNDER</p>
-    <h3 class="founder-name">Mr. John Bossman</h3>
-  </div>
-</div>
-</div>
+          <div class="contact-email mb-4">
+            <input type="email" class="form-control" id="email" placeholder="Email Address">
+          </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 E-Shop | Designed for demo purposes</p>
-  </footer>
+          <div class="contact-subject mb-4">
+            <input type="text" class="form-control" id="email" placeholder="Subject">
+          </div>
 
+          <div class="contact-message mb-4">
+            <input type="text" class="form-control" id="message" placeholder="Your message">
+          </div>
+
+          <div>
+            <button class="contact-submit">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

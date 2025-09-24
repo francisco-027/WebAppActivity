@@ -266,3 +266,19 @@ nav {
     font-size: 20px;  
     margin-top: -20px;
 }
+
+/**CON CONTACTS DESIGN**/
+.contact-text h1 {
+  font-family: "SF Pro Text";
+  color: #573100;
+}
+
+.contact-name {
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact-message input {
+  height: 200px;
+}

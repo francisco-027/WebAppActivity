@@ -1325,6 +1325,9 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 body {
     font-family: "SF Pro Display";
 }
+.page-title {
+  gap: 10px;
+}
 /**NAV BAR CUSTOM DESIGN**/
 nav {
     z-index: 1000;
@@ -1668,5 +1671,27 @@ textarea[type=text] {
   text-align: left;
   font-size: xx-large;
   
+}
+.carousel-inner {
+  border-radius: 8px; 
+}
+.carousel-item {
+    height: 485px;
+}
+.carousel-indicators button {
+  background-color: #3d2400;
+}
+.carousel-caption h3 {
+    font-family: "SF Pro Text";
+    color: #dac9b5;
+    text-shadow: 0px 0px 10px #553100;
+    -webkit-text-decoration: #9f6110 dotted underline;
+            text-decoration: #9f6110 dotted underline;
+}
+.carousel-caption p {
+    font-family: "SF Pro Display";
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #3d2400;
 }
 /*# sourceMappingURL=styles.css.map */

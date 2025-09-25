@@ -1642,13 +1642,6 @@ textarea[type=text] {
 }
 /**PRODUCTS PAGE**/
 /**search box**/
-.search-dropdown-container {
-  display: flex;              /* put items in one line */
-  justify-content: flex-end;  /* push them to the right */
-  align-items: center;        /* align vertically */
-  gap: 10px;                  /* space between search and button */
-  margin: 20px;
-}
 .custom-btn {
   background-color: #ffffff;   
   color: #fff;                 
@@ -1664,7 +1657,7 @@ textarea[type=text] {
   width: 250px;
   padding: 8px 12px;
   border: 2px solid #6b3e0b;
-  border-radius: 20px;
+  border-radius: 8px;
   background: #fdf5eb;
   font-size: 16px;
   height: 36px;
@@ -1674,8 +1667,6 @@ textarea[type=text] {
   color: #573100;
   text-align: left;
   font-size: xx-large;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  
 }
 /*# sourceMappingURL=styles.css.map */

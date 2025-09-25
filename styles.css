@@ -269,8 +269,14 @@ nav {
 
 /**CON CONTACTS DESIGN**/
 .contact-background {
-  background-color: #f3d389;
-  height: 100%;
+    background: url('https://i.ibb.co/MkBbrz43/contacts-bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-text h1 {
@@ -278,25 +284,43 @@ nav {
   color: #573100;
 }
 
-
 .contact-name {
   display: inline-flex;
   gap: 10px;
   width: 100%;
 }
+
+input[type=text],
+input[type=email],
+textarea[type=text] {
+  padding: 15px;
+}
+
 .contact-name input,
- .contact-email input, 
- .contact-subject input {
+.contact-email input, 
+.contact-subject input {
   border-radius:8px;
   height: 60px;
   border-color:#573100;
   border-width:2px;
   background-color: rgba(250, 233, 209, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.contact-name input:focus,
+.contact-email input:focus, 
+.contact-subject input:focus {
+  border-radius:8px;
+  height: 60px;
+  border-color:#573100;
+  border-width:2px;
+  background-color: rgba(250, 233, 209, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .contact-name input::placeholder,
- .contact-email input::placeholder, 
- .contact-subject input::placeholder {
+.contact-email input::placeholder, 
+.contact-subject input::placeholder {
   color: #573100; 
   font-size: large;
  }
@@ -306,6 +330,16 @@ nav {
   border-color:#573100;
   border-width:2px;
   background-color: rgba(250, 233, 209, 0.5);
+  backdrop-filter: blur(5px);
+  height: 200px;
+}
+
+.contact-message textarea:focus {
+  border-radius:8px;
+  border-color:#573100;
+  border-width:2px;
+  background-color: rgba(250, 233, 209, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .contact-message textarea::placeholder {

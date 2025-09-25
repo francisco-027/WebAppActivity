@@ -1609,4 +1609,42 @@ nav {
   font-size: 50px;
   color: #573100;
 }
+/**PRODUCTS PAGE**/
+/**search box**/
+.search-dropdown-container {
+  display: flex;              /* put items in one line */
+  justify-content: flex-end;  /* push them to the right */
+  align-items: center;        /* align vertically */
+  gap: 10px;                  /* space between search and button */
+  margin: 20px;
+}
+.custom-btn {
+  background-color: #ffffff;   
+  color: #fff;                 
+  border: none;
+  color: #6b3e0b; 
+}
+.custom-btn:hover {
+  background-color: #ffffff;  
+  color: #fff;    
+  color: #6b3e0b;              
+}
+.custom-search {
+  width: 250px;
+  padding: 8px 12px;
+  border: 2px solid #6b3e0b;
+  border-radius: 20px;
+  background: #fdf5eb;
+  font-size: 16px;
+  height: 36px;
+}
+.trends-text {
+  font-family: "SF Pro Text";
+  color: #573100;
+  text-align: left;
+  font-size: xx-large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=styles.css.map */

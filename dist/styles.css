@@ -1325,12 +1325,12 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + calc(var(--bs-border-wid
 body {
     font-family: "SF Pro Display";
 }
-.page-title {
-  gap: 10px;
-}
 /**NAV BAR CUSTOM DESIGN**/
 nav {
     z-index: 1000;
+}
+.page-title {
+  gap: 10px;
 }
 .my-custom-bg {
     background: rgba(255, 226, 169, 0.5);
@@ -1340,9 +1340,11 @@ nav {
     overflow: hidden;
     width: 100%;
 }
+/***************/
 /**SEARCH**/
 .search-bar {
   position: relative; 
+  width: 300px;
   display: flex; 
   align-items: center;
   border: 1px solid #412701;
@@ -1369,6 +1371,8 @@ nav {
 .overall-search[type=text] {
   color: #885405;
 }
+/***************/
+/**NAVBAR UNDERLINE ANIMATION**/
 .navbar-brand,
 .nav-link {
     font-family: "SF Pro Text";
@@ -1411,6 +1415,7 @@ nav {
 	background-color: #885405;
 	width: 100%;
 }
+/***************/
 /**HOME CONTENTS**/
 .home-items {
   border: 1px solid #6d4200;
@@ -1722,5 +1727,58 @@ nav {
     color: #ffffff;
     font-size: 20px;
     text-shadow: 0px 0px 10px #3d2400;
+}
+/**PRODUCTS CONTENTS**/
+.product-items {
+  border: 1px solid #6d4200;
+  border-radius: 8px;
+}
+.product-item1,
+.product-item2,
+.product-item3,
+.product-item4,
+.product-item5 {
+  text-align: center;
+}
+.product-item1 a,
+.product-item2 a,
+.product-item3 a,
+.product-item4 a,
+.product-item5 a{
+  font-size: 25px;
+  color: #7b4600;
+}
+.product-item1 img,
+.product-item2 img,
+.product-item3 img,
+.product-item4 img,
+.product-item5 img{
+  width: 35px;
+}
+.list-card {
+  border: 1px solid #3d2400;
+  border-radius: 8px;
+}
+.list-card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.list-coupon {
+  color: #af5e00;
+}
+.list-price {
+  font-family: "SF Pro Text";
+  color: #3d2400;
+}
+.list-price a {
+  background-color: transparent;
+  color: #3d2400;
+  text-decoration: none;
+}
+.list-price a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

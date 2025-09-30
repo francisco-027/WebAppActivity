@@ -196,6 +196,61 @@ nav {
   font-family: "SF Pro Text";
 }
 
+.cart-prod-price h3 {
+  padding-top: 20px;
+  padding-left: 30px;
+  font-family: "SF Pro Text";
+  color: #6d4200;
+}
+
+/**INCREMENT DECREMENT BUTTON**/
+.quantity {
+  height: 40px;
+  display: flex;
+  border: 2px solid #3d2400;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantity button {
+  background-color: #6d4200;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  height: auto;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.quantity button:hover {
+  background-color: #9f6110;
+}
+
+.input-box {
+  width: 40px;
+  text-align: center;
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*******************************/
+
 .drop-down {
   padding-left: 25px;
 }

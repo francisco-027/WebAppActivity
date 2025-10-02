@@ -4,14 +4,14 @@
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
-  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
+  src: url("../fonts/SFProDisplay-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "SF Pro Text";
   font-style: normal;
   font-weight: 900;
-  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Heavy.ttf");
+  src: url("../fonts/SFProText-Heavy.ttf");
 }
 
 body {
@@ -21,6 +21,10 @@ body {
 /**NAV BAR CUSTOM DESIGN**/
 nav {
     z-index: 1000;
+}
+
+.foot {
+  background-color: #412701;
 }
 
 .page-title {
@@ -76,9 +80,9 @@ nav {
     color: #523803;
     position: relative;
     outline: none !important;
-    text-transform: uppercase;
     transition: 0.2s;
 }
+
 
 .nav-link:after {
     background: none repeat scroll 0 0 transparent;
@@ -111,6 +115,16 @@ nav {
 	color: #885405;
 }
 
+.nav-link.active {
+  color: #885405 !important;
+}
+
+.nav-link.active::after {
+  background-color: #885405;
+  width: 100%;
+}
+
+
 .nav-link:hover::after,
 .nav-link:focus::after {
 	background-color: #885405;
@@ -142,6 +156,38 @@ nav {
   color: #7b4600;
 }
 
+/**CARDIGAN COLLECTION**/
+.breadcrumb-item.active {
+  font-family: "SF Pro Text";
+  color: #885405;
+}
+
+.collection-header img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.collection-header nav {
+  position: absolute;
+  padding-left: 120px;
+}
+
+.breadcrumb-item {
+  font-size: large;
+}
+
+.breadcrumb-item i {
+  color: #573100;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 /**CART DESIGN**/
 .text-left {

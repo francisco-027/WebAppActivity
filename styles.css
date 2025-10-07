@@ -18,7 +18,7 @@ body {
     font-family: "SF Pro Display";
 }
 
-/**NAV BAR CUSTOM DESIGN**/
+/** NAV BAR CUSTOM DESIGN **/
 nav {
     z-index: 1000;
 }
@@ -41,7 +41,8 @@ nav {
 }
 /***************/
 
-/**SEARCH**/
+
+/** NAVBAR SEARCH **/
 .search-bar {
   position: relative; 
   width: 300px;
@@ -73,7 +74,8 @@ nav {
 }
 /***************/
 
-/**NAVBAR UNDERLINE ANIMATION**/
+
+/** NAVBAR UNDERLINE ANIMATION **/
 .navbar-brand,
 .nav-link {
     font-family: "SF Pro Text";
@@ -132,7 +134,37 @@ nav {
 }
 /***************/
 
-/**HOME CONTENTS**/
+/** HOME CONTENTS **/
+
+/** CAROUSEL **/
+.carousel-inner {
+  border-radius: 8px; 
+}
+
+.carousel-item {
+    height: 485px;
+}
+
+.carousel-indicators button {
+  background-color: #3d2400;
+}
+
+.carousel-caption h3 {
+    font-family: "SF Pro Text";
+    color: #dac9b5;
+    text-shadow: 0px 0px 10px #553100;
+    text-decoration: #9f6110 dotted underline;
+}
+
+.carousel-caption p {
+    font-family: "SF Pro Display";
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #3d2400;
+}
+
+/** HOME ITEMS **/
+
 .home-items {
   border: 1px solid #6d4200;
 
@@ -156,7 +188,7 @@ nav {
   color: #7b4600;
 }
 
-/**CARDIGAN COLLECTION**/
+/** COLLECTIONS **/
 .breadcrumb-item.active {
   font-family: "SF Pro Text";
   color: #885405;
@@ -180,6 +212,17 @@ nav {
   color: #573100;
 }
 
+.collection-cart a {
+  color: #573100;
+  text-decoration: none;
+  font-family: "SF Pro Text";
+}
+
+.collection-cart a:hover {
+  color: #885405;
+}
+
+/** CARD ZOOM ANIMATION**/
 .zoom {
   transition: transform .2s;
 }
@@ -189,232 +232,80 @@ nav {
   cursor: pointer;
 }
 
-/**CART DESIGN**/
-.text-left {
+/***************/
+
+/**PRODUCTS CONTENTS**/
+.trends-text {
   font-family: "SF Pro Text";
   color: #573100;
-}
-
-.select-check {
-  background-color: rgba(234, 232, 228, 0.9);
-  backdrop-filter: blur(25px);
-  border-color: #885405;
-  width: 25px;
-  height: 25px;
-}
-
-.select-label {
-  padding-right: 10px;
-}
-
-.card-header {
-  text-align: right;
-  height: 40px;
-}
-
-.store-name {
   text-align: left;
-  position: absolute;
-  display: block;
+  font-size: xx-large;
 }
 
-.delete {
-  border: none;
-  background: none;
-  color: #885405;
-}
-
-.delete:hover {
-  color: #d04132;
-}
-
-.card-body h2 {
-  text-decoration: #885405 underline;
-  font-size: x-large;
-  padding-left: 30px;
-  padding-top: 20px;
-}
-
-.card-body h4 {
-  font-size: medium;
-  padding-top: 20px;
-  padding-left: 30px;
-  font-family: "SF Pro Text";
-}
-
-.cart-prod-price h3 {
-  padding-top: 20px;
-  padding-left: 30px;
-  font-family: "SF Pro Text";
-  color: #6d4200;
-}
-
-/**INCREMENT DECREMENT BUTTON**/
-.quantity {
-  height: 40px;
-  display: flex;
-  border: 2px solid #3d2400;
+.product-items {
+  border: 1px solid #6d4200;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.quantity button {
-  background-color: #6d4200;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  width: 30px;
-  height: auto;
+.product-item1,
+.product-item2,
+.product-item3,
+.product-item4,
+.product-item5 {
   text-align: center;
-  transition: background-color 0.2s;
 }
 
-.quantity button:hover {
-  background-color: #9f6110;
+.product-item1 a,
+.product-item2 a,
+.product-item3 a,
+.product-item4 a,
+.product-item5 a{
+  font-size: 25px;
+  color: #7b4600;
 }
 
-.input-box {
-  width: 40px;
-  text-align: center;
-  border: none;
-  padding: 8px 10px;
-  font-size: 16px;
-  outline: none;
+.product-item1 img,
+.product-item2 img,
+.product-item3 img,
+.product-item4 img,
+.product-item5 img{
+  width: 35px;
 }
 
-/* Hide the number input spin buttons */
-.input-box::-webkit-inner-spin-button,
-.input-box::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.input-box[type="number"] {
-  -moz-appearance: textfield;
-}
-
-/*******************************/
-
-.drop-down {
-  padding-left: 25px;
-}
-
-#myDropdown {
-  font-size: medium;
-  width: 23%;
-  height: 20px;
+.list-card {
+  border: 1px solid #3d2400;
   border-radius: 8px;
-  border: none;
-  background: none;
 }
 
-#myDropdown option {
-  background-color: #cbb28b;
-  border-radius: 10%;
-  color: #573100;
+.list-card img {
+  object-fit: contain;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-#myDropdown option:hover {
-  background-color: #000000;
-  border-radius: 10%;
-  color: #573100;
-}
-
-.card-footer {
-  height: 40px;
-}
-
-.shipping {
-  color: #287631;
-}
-
-.coupon {
-  display: inline-block;
-  position: absolute;
-  text-align: right;
-  right: 10px;
+.list-coupon {
   color: #af5e00;
 }
 
-.form-check {
-  display: inline-flex;
-  position: absolute;
-  top: 7px;
-  left: 10px;
-}
-
-.form-check-input {
-  background-color: rgba(234, 232, 228, 0.9);
-  backdrop-filter: blur(25px);
-  border-color: #885405;
-  border-radius: 100px;
-  width: 30px;
-  height: 30px;
-}
-
-.form-check-input:checked {
-  background-color: rgba(136, 84, 5, 0.9);
-  border-color: #885405;
-  backdrop-filter: blur(25px);
-}
-
-.store {
+.list-price {
   font-family: "SF Pro Text";
-  color: #494949;
+  color: #3d2400;
+}
+
+.list-price a {
+  background-color: transparent;
+  color: #3d2400;
   text-decoration: none;
 }
 
-.store:hover {
-  color: #7b4600;
-  cursor: pointer;
+.list-price a:hover {
+  text-decoration: underline;
 }
 
-/**FOOTER**/
+/***************/
 
-.my-custom-footer-bg {
-  padding-top: 20px;
-  background: rgba(255, 226, 169, 0.5);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  bottom: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-}
-
-.price {
-  display: inline-flex;
-}
-
-.price h2 {
-  font-family: "SF Pro Text";
-  padding-left: 5px;
-  color: #573100;
-}
-
-.checkout {
-  height: 35px;
-  width: 100px;
-  border-radius: 50px;
-  border: none;
-  background-color: #573100;
-  color: #ffffff;
-}
-
-.finish {
-  display: inline-flex;
-}
-
-.finish p {
-  padding-right: 20px;
-  padding-top: 5px;
-  color: #af5e00;
-}
-
-
-/**starts leovs**/
+/** ABOUT **/
 
 .card-text {
     font-family: "SF Pro Text";
@@ -432,7 +323,9 @@ nav {
     margin-top: -20px;
 }
 
-/**CON CONTACTS DESIGN**/
+/***************/
+
+/** CONTACTS DESIGN **/
 .contact-background {
     background: url('https://i.postimg.cc/G2YTWnfc/contacts-bg1.jpg');
     background-size: cover;
@@ -543,99 +436,235 @@ nav {
   color: #573100;
 }
 
-/**PRODUCTS PAGE**/
+/***************/
 
-.trends-text {
+/**CART DESIGN**/
+.text-left {
   font-family: "SF Pro Text";
   color: #573100;
+}
+
+#selectAllCart {
+  background-color: rgba(234, 232, 228, 0.9);
+  backdrop-filter: blur(25px);
+  border-color: #885405;
+  width: 30px;
+  height: 30px;
+}
+
+#selectAllCart:checked {
+  background-color: rgba(136, 84, 5, 0.9);
+  border-color: #885405;
+  backdrop-filter: blur(25px);
+}
+
+.select-label {
+  padding-right: 10px;
+  padding-top: 6px;
+}
+
+.card-header {
+  text-align: right;
+  height: 40px;
+}
+
+.store-name {
   text-align: left;
-  font-size: xx-large;
+  position: absolute;
+  display: block;
 }
 
-.carousel-inner {
-  border-radius: 8px; 
+.delete {
+  border: none;
+  background: none;
+  color: #885405;
 }
 
-.carousel-item {
-    height: 485px;
+.delete:hover {
+  color: #d04132;
 }
 
-.carousel-indicators button {
-  background-color: #3d2400;
+.card-body h2 {
+  text-decoration: #885405 underline;
+  font-size: x-large;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
-.carousel-caption h3 {
-    font-family: "SF Pro Text";
-    color: #dac9b5;
-    text-shadow: 0px 0px 10px #553100;
-    text-decoration: #9f6110 dotted underline;
+.card-body h4 {
+  font-size: medium;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-family: "SF Pro Text";
 }
 
-.carousel-caption p {
-    font-family: "SF Pro Display";
-    color: #ffffff;
-    font-size: 20px;
-    text-shadow: 0px 0px 10px #3d2400;
+.cart-prod-price h3 {
+  padding-top: 20px;
+  padding-left: 30px;
+  font-family: "SF Pro Text";
+  color: #6d4200;
 }
 
-/**PRODUCTS CONTENTS**/
-.product-items {
-  border: 1px solid #6d4200;
+/**INCREMENT DECREMENT BUTTON**/
+.quantity {
+  height: 40px;
+  display: flex;
+  border: 2px solid #3d2400;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.product-item1,
-.product-item2,
-.product-item3,
-.product-item4,
-.product-item5 {
+.quantity button {
+  background-color: #6d4200;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  height: auto;
   text-align: center;
+  transition: background-color 0.2s;
 }
 
-.product-item1 a,
-.product-item2 a,
-.product-item3 a,
-.product-item4 a,
-.product-item5 a{
-  font-size: 25px;
-  color: #7b4600;
+.quantity button:hover {
+  background-color: #9f6110;
 }
 
-.product-item1 img,
-.product-item2 img,
-.product-item3 img,
-.product-item4 img,
-.product-item5 img{
-  width: 35px;
+.input-box {
+  width: 40px;
+  text-align: center;
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  outline: none;
 }
 
-.list-card {
-  border: 1px solid #3d2400;
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.drop-down {
+  padding-left: 25px;
+}
+
+#myDropdown {
+  font-size: medium;
+  width: 23%;
+  height: 20px;
   border-radius: 8px;
+  border: none;
+  background: none;
 }
 
-.list-card img {
-  object-fit: contain;
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+#myDropdown option {
+  background-color: #cbb28b;
+  border-radius: 10%;
+  color: #573100;
 }
 
-.list-coupon {
+#myDropdown option:hover {
+  background-color: #000000;
+  border-radius: 10%;
+  color: #573100;
+}
+
+.card-footer {
+  height: 40px;
+}
+
+.shipping {
+  color: #287631;
+}
+
+.coupon {
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  right: 10px;
   color: #af5e00;
 }
 
-.list-price {
-  font-family: "SF Pro Text";
-  color: #3d2400;
+.form-check {
+  display: inline-flex;
+  position: absolute;
+  top: 7px;
+  left: 10px;
 }
 
-.list-price a {
-  background-color: transparent;
-  color: #3d2400;
+.form-check-input {
+  background-color: rgba(234, 232, 228, 0.9);
+  backdrop-filter: blur(25px);
+  border-color: #885405;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+
+.form-check-input:checked {
+  background-color: rgba(136, 84, 5, 0.9);
+  border-color: #885405;
+  backdrop-filter: blur(25px);
+}
+
+.store {
+  font-family: "SF Pro Text";
+  color: #494949;
   text-decoration: none;
 }
 
-.list-price a:hover {
-  text-decoration: underline;
+.store:hover {
+  color: #7b4600;
+  cursor: pointer;
 }
+
+/** CART CARD FOOTER **/
+
+.my-custom-footer-bg {
+  padding-top: 20px;
+  background: rgba(255, 226, 169, 0.5);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+}
+
+.price {
+  display: inline-flex;
+}
+
+.price h2 {
+  font-family: "SF Pro Text";
+  padding-left: 5px;
+  color: #573100;
+}
+
+.checkout {
+  height: 35px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: #573100;
+  color: #ffffff;
+}
+
+.finish {
+  display: inline-flex;
+}
+
+.finish p {
+  padding-right: 20px;
+  padding-top: 5px;
+  color: #af5e00;
+}
+
+/***************/

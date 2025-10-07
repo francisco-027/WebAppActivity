@@ -13,34 +13,45 @@
 <body>
 
   <!-- NAVBAR -->
-  <div class="navbar justify-content-between align-items-center my-custom-bg">
+  <nav class="navbar justify-content-between align-items-center my-custom-bg">
     <div class="container">
+      <div class="navbar-brand">
+        <a href=""><i class="fa-solid fa-bag-shopping"></i> E-Shop</a>
+      </div>
+
+      <div class="navbar-links">
+        <a href="" class="nav-items">Home</a>
+        <a href="products.html" class="nav-items">Products</a>
+        <a href="about.html" class="nav-items">About</a>
+        <a href="contact.html" class="nav-items">Contact</a>
+      </div>
+
+      <div class="user-items">
+        <a href="cart.html" class="nav-items"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#" class="nav-items"><i class="fa-solid fa-user"></i></a>
+      </div>
       
-      <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-bag-shopping"></i> E-Shop</a> 
+      <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-bag-shopping"></i> E-Shop</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="overall-search" id="overall-search" placeholder="Search">
       </div>
 
-      <div class="nav-items d-flex">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="products.html">Products</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </div>
-      
-      <div class="user-items d-flex">
-        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-        <a class="nav-link" id="openModalBtn" href="#"><i class="fa-solid fa-user"></i> Login</a>
-      </div>
-
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+        </ul>
+      </div> -->
     </div>
-  </div>
-
-  <div id="myModal" class="modal modal-open">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>TEST LOGIN MODAL KEME KEME</h2>
-    </div>
-  </div>
+  </nav>
 
   <!--CAROUSEL PRODUCT IMAGE-->
 <div class="container py-3">
@@ -247,20 +258,5 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/jQuery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-  <script>
-    $(document).ready(function() {
-      $("#openModalBtn").click(function() {
-        event.preventDefault();
-        $("#myModal").css("display", "block");
-      });
-
-      $(".close-button").click(function() {
-        $("#myModal").css("display", "none");
-      });
-
-    });
-  </script>
-
 </body>
 </html>

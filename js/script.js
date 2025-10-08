@@ -1,6 +1,7 @@
+
 $(document).ready(function() {
     // LOGIN MODAL FUNCTIONALITY
-      $("#openModalBtn").click(function() {
+      $("#openModalBtn").click(function(event) {
         event.preventDefault();
         $("#myModal").css("display", "block");
       });
@@ -36,4 +37,8 @@ $(document).ready(function() {
           }
         });
       });
-});
+
+    // CONTACT FORM VALIDATION
+    $("#contactForm").validate();
+
+  });

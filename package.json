@@ -11,8 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jquery": "^3.5.33",
     "bootstrap": "^5.3.8",
-    "bulma": "^1.0.4"
+    "bulma": "^1.0.4",
+    "jquery": "^3.7.1",
+    "jquery-validation": "^1.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

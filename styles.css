@@ -153,6 +153,13 @@ body {
     height: 485px;
 }
 
+.carousel-item img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
 .carousel-indicators button {
   background-color: #3d2400;
 }
@@ -688,11 +695,12 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
   animation: fadeIn 0.3s;
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgba(255, 244, 224, 0.8);
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;

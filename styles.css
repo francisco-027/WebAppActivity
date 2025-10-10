@@ -341,6 +341,143 @@ body {
 /***************/
 
 /** CONTACTS DESIGN **/
+/* ERROR STYLES **/
+.error {
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+#firstname-error {
+  position: absolute; 
+  background-color: #e02f2f; 
+  border-radius: 4px; 
+  padding-left: 18px; 
+  max-width: 70%; 
+  margin-top: -23px; 
+  margin-left: 20px; 
+  opacity: 1;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#firstname-error::after {
+  content: ''; 
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent; 
+  border-top-color: #e02f2f;
+  border-bottom: 0; 
+  top: 30px;
+  right: 75px;
+}
+
+#lastname-error {
+  position: absolute; 
+  background-color: #e02f2f; 
+  border-radius: 4px; 
+  padding-left: 18px; 
+  max-width: 70%; 
+  margin-top: -23px; 
+  margin-left: 248px; 
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#lastname-error::after {
+  content: ''; 
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent; 
+  border-top-color: #e02f2f; 
+  border-bottom: 0; 
+  top: 30px; 
+  right: 75px; 
+}
+
+#email-error {
+  position: absolute; 
+  background-color: #e02f2f; 
+  border-radius: 4px; 
+  padding-left: 18px; 
+  max-width: 70%; 
+  margin-top: -83px; 
+  margin-left: 20px; 
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#email-error::after {
+  content: ''; 
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent; 
+  border-top-color: #e02f2f; /* Color of the triangle, matching the bubble */
+  border-bottom: 0; /* Remove bottom border to create the point */
+  top: 30px; /* Position the triangle below the bubble */
+  right: 75px; /* Adjust position of the triangle */
+}
+
+#subject-error {
+  position: absolute; 
+  background-color: #e02f2f; 
+  border-radius: 4px; 
+  padding-left: 18px; 
+  max-width: 70%; 
+  margin-top: -83px; 
+  margin-left: 20px; 
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#subject-error::after {
+  content: ''; 
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent; 
+  border-top-color: #e02f2f; 
+  border-bottom: 0; 
+  top: 30px; 
+  right: 75px; 
+}
+
+#message-error {
+  position: absolute; 
+  background-color: #e02f2f; 
+  border-radius: 4px; 
+  padding-left: 18px; 
+  max-width: 70%; 
+  margin-top: -223px; 
+  margin-left: 20px; 
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#message-error::after {
+  content: ''; 
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent; 
+  border-top-color: #e02f2f; 
+  border-bottom: 0; 
+  top: 30px; 
+  right: 75px; 
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  10%,20%,30%,40%,50%,60%,70%,80%,90% { opacity: 1; }
+}
+
 .contact-background {
     background: url('../img/contacts-bg1.jpg');
     background-size: cover;
@@ -454,6 +591,11 @@ body {
 /***************/
 
 /**CART DESIGN**/
+.cart-empty h2 {
+  font-family: "SF Pro Text";
+  color: #573100;
+}
+
 .text-left {
   font-family: "SF Pro Text";
   color: #573100;
@@ -693,7 +835,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(10px);
   animation: fadeIn 0.3s;
@@ -701,7 +843,7 @@ body {
 
 .modal-content {
   background-color: rgba(255, 244, 224, 0.8);
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   border-radius: 15px;
@@ -709,15 +851,20 @@ body {
 }
 
 .close-button {
+  padding-right: 7px;
+  padding-left: 7px;
+  border: 2px solid #888;
+  border-radius: 30px;
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .close-button:hover,
 .close-button:focus {
-  color: black;
+  color: #ff5c5c;
+  border-color: #ff5c5c;
   text-decoration: none;
   cursor: pointer;
 }
@@ -727,4 +874,84 @@ body {
   to {opacity: 1;}
 }
 
+.login-image img {
+  width: 80%;
+  height: auto;
+}
 
+.login {
+  display: flex;
+  justify-content: right;
+  padding: 0px;
+  margin-right: 40px;
+}
+
+#loginemail,
+#registeremail {
+  width: 350px;
+}
+
+.register {
+  display: none;
+  justify-content: right;
+  padding: 0px;
+  margin-right: 30px;
+}
+
+.showPass {
+  color: #885405;
+  position: relative; 
+  left: 320px; 
+  top: -30px; 
+  cursor: pointer;
+}
+
+/* LOGIN FIELD ERROR STYLES */
+
+#loginemail-error{
+  position: absolute;
+  background-color: #e02f2f;
+  border-radius: 4px;
+  padding-left: 18px;
+  max-width: 70%;
+  margin-top: -63px;
+  margin-left: 40px;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#password-error {
+  position: absolute;
+  background-color: #e02f2f;
+  border-radius: 4px;
+  padding-left: 18px;
+  max-width: 70%;
+  margin-top: -63px;
+  margin-left: 30px;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+#loginemail-error::after{
+  content: '';
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #e02f2f;
+  border-bottom: 0;
+  top: 28px;
+  right: 80px;
+}
+
+#password-error::after {
+  content: '';
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #e02f2f;
+  border-bottom: 0;
+  top: 28px;
+  right: 95px;
+}

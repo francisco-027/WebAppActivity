@@ -7,7 +7,7 @@
 
   <!-- Bootstrap CSS (comment out to see plain HTML) -->
   <link rel="icon" type="image/x-icon" href="./img/page-icon.svg">
-  <link href="./dist/styles.css" rel="stylesheet">
+  <link href="./dist/styles.css?v=2" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -21,14 +21,14 @@
       </div>
 
       <div class="nav-items d-flex ms-auto">
-        <a class="nav-link" href="bootstrap.html">Home</a>
-        <a class="nav-link" href="products.html">Products</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="products.php">Products</a>
+        <a class="nav-link" href="about.php">About</a>
+        <a class="nav-link" href="contact.php">Contact</a>
       </div>
       
       <div class="user-items d-flex ms-auto">
-        <a class="nav-link active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a class="nav-link active" href="cart.php"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         <a class="nav-link" id="openModalBtn" href="#"><i class="fa-solid fa-user"></i> Login</a>
       </div>
 
@@ -36,15 +36,16 @@
   </div>
 
   <!-- LOGIN MODAL -->
-  <div id="myModal" class="modal modal-open">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>TEST LOGIN MODAL KEME KEME</h2>
-    </div>
-  </div>
+   <?php include 'templates/login.php'; ?>
 
   <!-- PRODUCTS -->
-  <section class="py-4">
+   <div class="cart-empty">
+      <div class="cart-image text-center mt-5">
+        <img src="./img/icons/cart.png" alt="cart-empty">
+      </div>
+      <h2 class="text-center">Your cart is empty.</h2>
+   </div>
+  <!-- <section class="py-4">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h2 class="text-left"><i class="fa-solid fa-cart-shopping"></i> Your Cart</h2>
@@ -54,7 +55,7 @@
         </div>
       </div>
       
-      <!-- CARD 1 -->
+      CARD 1
       <div class="card mb-4" style="max-width: 1300px; background-color: rgb(255, 237, 205); border-color: rgba(136, 84, 5, 1);">
         <div class="row g-0">
           <div class="col-md-3">
@@ -103,7 +104,7 @@
         </div>
       </div>
 
-      <!-- CARD 2 -->
+      CARD 2
       <div class="card mb-4" style="max-width: 1300px; background-color: rgb(255, 237, 205); border-color: rgba(136, 84, 5, 1);">
         <div class="row g-0">
           <div class="col-md-3">
@@ -152,10 +153,10 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- FOOTER CHECKOUT -->
-  <footer class="my-custom-footer-bg">
+  <!-- <footer class="my-custom-footer-bg">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="price">
@@ -169,12 +170,13 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

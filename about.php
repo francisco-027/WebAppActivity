@@ -21,14 +21,14 @@
       </div>
 
       <div class="nav-items d-flex ms-auto">
-        <a class="nav-link" href="bootstrap.html">Home</a>
-        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="products.php">Products</a>
         <a class="nav-link active" href="#">About</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="contact.php">Contact</a>
       </div>
       
       <div class="user-items d-flex ms-auto">
-        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         <a class="nav-link" id="openModalBtn" href="#"><i class="fa-solid fa-user"></i> Login</a>
       </div>
 
@@ -36,33 +36,16 @@
   </div>
 
   <!-- LOGIN MODAL -->
-  <div id="myModal" class="modal modal-open">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>TEST LOGIN MODAL KEME KEME</h2>
-    </div>
-  </div>
+    <?php include 'templates/login.php'; ?>
 
   <!-- ABOUT US SECTION -->
-  <div class="container py-5">
-    <div class="card" style="width: 18rem;">
-      <img src="img/bosscon.jpeg" class="card-img-top" alt="...">
-      <div class="founder-one">
-        <p class="card-text">FOUNDER</p>
-        <h3 class="founder-name">Mr. John Bossman</h3>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 E-Shop | Designed for demo purposes</p>
-  </footer>
+  
 
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

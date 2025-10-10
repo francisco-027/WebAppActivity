@@ -7,7 +7,7 @@
 
   <!-- Bootstrap CSS (comment out to see plain HTML) -->
   <link rel="icon" type="image/x-icon" href="./img/page-icon.svg">
-  <link href="./dist/styles.css" rel="stylesheet">
+  <link href="./dist/styles.css?v=2" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -22,25 +22,21 @@
 
       <div class="nav-items d-flex">
         <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="products.html">Products</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="products.php">Products</a>
+        <a class="nav-link" href="about.php">About</a>
+        <a class="nav-link" href="contact.php">Contact</a>
       </div>
       
       <div class="user-items d-flex">
-        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         <a class="nav-link" id="openModalBtn" href="#"><i class="fa-solid fa-user"></i> Login</a>
       </div>
 
     </div>
   </div>
 
-  <div id="myModal" class="modal modal-open">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>TEST LOGIN MODAL KEME KEME</h2>
-    </div>
-  </div>
+  <!-- LOGIN MODAL -->
+    <?php include 'templates/login.php'; ?>
 
   <!--CAROUSEL PRODUCT IMAGE-->
   <div class="container py-3">
@@ -53,13 +49,13 @@
 
       <div class="carousel-inner mb-0">
         <div class="carousel-item active">
-          <a href="./links/cardigan-collection.html"><img src="./img/slide1.jpg" title="Cardigan Collections" class="d-block w-100" alt="cardigan-collection"></a>
+          <a href="./links/cardigan-collection.php"><img src="./img/slide1.jpg" title="Cardigan Collections" class="d-block w-100" alt="cardigan-collection"></a>
         </div>
         <div class="carousel-item">
-          <a href="./links/vinyl-collection.html"><img src="./img/slide2.jpg" title="Vinyl Collections" class="d-block w-100" alt="vinyl-collection"></a>
+          <a href="./links/vinyl-collection.php"><img src="./img/slide2.jpg" title="Vinyl Collections" class="d-block w-100" alt="vinyl-collection"></a>
         </div>
         <div class="carousel-item">
-          <a href="./links/poster-collection.html"><img src="./img/slide3.jpg" title="Poster Collections" class="d-block w-100" alt="posters-collection"></a>
+          <a href="./links/poster-collection.php"><img src="./img/slide3.jpg" title="Poster Collections" class="d-block w-100" alt="posters-collection"></a>
         </div>
       </div>
 
@@ -172,7 +168,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="./js/script.js"></script>
-
 </body>
 </html>

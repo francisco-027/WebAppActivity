@@ -21,14 +21,14 @@
       </div>
 
       <div class="nav-items d-flex ms-auto">
-        <a class="nav-link" href="bootstrap.html">Home</a>
-        <a class="nav-link" href="products.html">Products</a>
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="products.php">Products</a>
+        <a class="nav-link" href="about.php">About</a>
         <a class="nav-link active" href="#">Contact</a>
       </div>
       
       <div class="user-items d-flex ms-auto">
-        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         <a class="nav-link" id="openModalBtn" href="#"><i class="fa-solid fa-user"></i> Login</a>
       </div>
 
@@ -36,12 +36,7 @@
   </div>
 
   <!-- LOGIN MODAL -->
-  <div id="myModal" class="modal modal-open">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>TEST LOGIN MODAL KEME KEME</h2>
-    </div>
-  </div>
+    <?php include 'templates/login.php'; ?>
 
   <!-- CONTACT SECTION -->
   <section class="contact-background py-4">
@@ -68,20 +63,20 @@
 
         <form class="contact-form" id="contactForm">
           <div class="contact-name mb-3">
-            <input type="text" class="form-control" id="f-name" placeholder="First Name" required>
-            <input type="text" class="form-control" id="l-name" placeholder="Last Name" required>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
+            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
           </div>
 
           <div class="contact-email mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
           </div>
 
           <div class="contact-subject mb-3">
-            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
           </div>
 
           <div class="contact-message mb-3">
-            <textarea type="text" class="form-control" id="message" placeholder="Your Message" required></textarea>
+            <textarea type="text" class="form-control" name="message" id="message" placeholder="Your Message"></textarea>
           </div>
 
             <input type="submit" class="contact-submit" value="Contact Sales">
